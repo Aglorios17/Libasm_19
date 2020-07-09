@@ -14,7 +14,7 @@ loop:
 	call	ft_strlen
 	mov		rdi, rax
 	inc		rdi
-	call	_malloc
+	call	malloc
 	cmp  	rax, 0
 	je		return
 	pop		rsi

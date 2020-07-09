@@ -23,6 +23,7 @@ ft_read:
 
 return:
 	pop		rcx
+	neg		rax
 	xor		rdx, rdx
 	mov		rdx, rax
 	push	rdx
