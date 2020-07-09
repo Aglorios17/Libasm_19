@@ -4,18 +4,18 @@ _ft_strcpy:
 	xor		rax, rax
 	xor		rdx, rdx
 	cmp		rdi, 0
-	je		_return
+	je		return
 	cmp		rsi, 0
-	je		_return
+	je		return
 
-_loop:
+loop:
 	mov		dl, byte [rsi + rax]
 	mov		byte [rdi + rax], dl
 	cmp		dl , 0
-	je		_return
+	je		return
 	inc		rax
-	jmp		_loop
+	jmp		loop
 
-_return:
+return:
 	mov		rax, rdi
 	ret

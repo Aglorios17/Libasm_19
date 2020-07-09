@@ -1,6 +1,6 @@
-	global _ft_strcmp
+	global ft_strcmp
 
-_ft_strcmp:
+ft_strcmp:
 	xor		rax, rax
 	xor 	rdx, rdx				; dl = (char)rdx
 	cmp		rdi, 0

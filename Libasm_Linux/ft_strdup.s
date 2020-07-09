@@ -1,4 +1,4 @@
-	global ft_strdup
+	global	ft_strdup
 	extern	malloc
 	extern	ft_strlen
 	extern	ft_strcpy
@@ -14,7 +14,7 @@ loop:
 	call	ft_strlen
 	mov		rdi, rax
 	inc		rdi
-	call	malloc
+	call	_malloc
 	cmp  	rax, 0
 	je		return
 	pop		rsi
